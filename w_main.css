@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Phần tiêu đề */
+#menu_text {
+    color: black;
+    background-color: #9dffb3;
+    text-align: center;
+    padding: 40px;
+    margin: 0px;
+} 
+/* Làm thanh menu */
+nav {
+    background-color: black;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#menu li {
+    display: block;
+    position: relative;
+    padding: 20px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu li a:hover {
+    color: #ffffff9b;
+}
+
+#menu ul.menucon {
+    position: absolute;
+    background: black;
+    list-style: none;
+    padding: 15px 0px;
+    width: 100px;
+    display: none;
+}
+
+#menu ul.menucon li {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff5e;
+    text-align: center;
+}
+#menu ul.menucon li:last-child a{
+    border: none;
+}
+#menu li:hover ul.menucon {
+    display: block;
+}
+/* Hình */
+#hinh {
+    text-align: center;
+    background-color: #1aa37a;
+}
+/* Phần trung tâm */
+#flex_container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Bên trái */
+#flex_container #left_side {
+    flex: 30%;
+    background-color: #9ef9d8;
+    padding: 10px;
+}
+
+#flex_container #left_side h2 {
+    text-align: center;
+}
+
+#flex_container #left_side ul li {
+    padding: 5px;
+}
+
+#flex_container #left_side #table {
+    text-align: center;
+}
+
+/* Bên phải */
+#flex_container #right_side{
+    flex: 70%;
+    background-color: #9dffb3;
+    padding: 20px;
+}
+
+#flex_container #right_side h2 {
+    text-align: center;
+}
+
+/* cách 1 */
+/* #flex_container #right_side .hang1 {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+#flex_container #right_side .hang1_img {
+    width: 90%;
+} */
+
+/* cách 2 */
+#sp_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hang1 {
+    flex: 33%;
+    text-align: center;
+}
+
+#flex_container #right_side .hang1_img {
+    width: 90%;
+}
+
+.botton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0px 20px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.hang1_buy_product {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+.hang1_buy_product:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+
+.hang1_title {
+    font-size: 150%;
+    color: orangered;
+    padding: 10px 0px 5px 10px;
+}
+
+
+/* Bảng */
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+  
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* @media(max-width: 400px) {
+    #flex_container #left_side {
+        flex: 100%;
+    }
+    #flex_container #right_side {
+        flex: 100%;
+    }
+    #flex_container {
+        flex-wrap: wrap;
+    }
+}  */
+/* Phần bán lap top */
+
+#background_laptop {
+    background-color: #9ef9d8;
+    color: black;
+    border-radius: 40px;
+}
+#background_laptop h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+#laptop_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hang2 {
+    flex: 20%;
+    text-align: center;
+}
+.hang2 .khung {
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.hang2_img {
+    width: 96%;
+}
+#laptop_container .hang2 .hang2_title {
+    color: red;
+    padding: 10px;
+}
+
+
+/* Phần liên hệ */
+footer #Contact_Info {
+    font-size: 25px;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    margin: 0px;
+    background-color: white;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    margin-left: 500px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Phần thay đổi theo độ dài responsive */
+@media(max-width: 800px) {
+    #flex_container #left_side {
+        flex: 100%;
+    }
+    #flex_container #right_side {
+        flex: 100%;
+    }
+    #flex_container {
+        flex-wrap: wrap;
+    }
+  /* cách 1 */
+    /* #flex_container #right_side .hang1 {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+    
+    #flex_container #right_side .hang1_img {
+        width: 90%;
+    } */
+    /* cách 2 */
+    .hang1 {
+        flex: 50%;
+    }
+    #laptop_container .hang2 {
+        flex: 50%;
+    }
+}
