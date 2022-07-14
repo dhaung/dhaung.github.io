@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My resume website">
+    <meta name="author" content="Dung Ha">
+    <meta name="coutry" content="Vietnames">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w_main.css">
+    <title>Web Bán Hàng</title>
+</head>
+<body>
+    <h1 id="menu_text"> WEB NHÀ LÀM</h1>
+<!-- làm thanh menu -->
+    <nav>
+        <ul id="menu">
+            <li><a href="#contact" >Thông Tin Cá Nhân</a></li>
+            <li><a href="#education" >Education</a></li>
+            <li><a href="#table" >Bảng</a></li>
+            <li><a href="#san_pham">Sản Phẩm 1</a>
+                <ul class="menucon">
+                    <li><a href="#">Điện Thoại</a></li>
+                    <li><a href="#laptop">Lap Top</a></li>
+                    <li><a href="#">Chuột</a></li>
+                    <li><a href="#">Bàn Phím</a></li>
+                </ul>
+            </li>
+            <li><a href="#san_pham">Sản Phẩm 2</a>
+                <ul class="menucon">
+                    <li><a href="#">menu 2.1</a></li>
+                    <li><a href="#">menu 2.2</a></li>
+                    <li><a href="#">menu 2.3</a></li>
+                    <li><a href="#">menu 2.4</a></li>
+                </ul>
+            </li>
+            <li><a href="#Contact_Info">Thông Tin Liên Hệ</a></li>
+        </ul>
+    </nav>
+    <!-- Hình -->
+    <div id="hinh">
+        <img src="hinh/avatar.jpg" alt="Lỗi"/>
+    </div>
+    <div id="flex_container">
+        <!-- Bên Trái -->
+        <div id="left_side">
+            <h2 id="contact">Thông Tin Công Ty</h2>
+            <p><em>.......</em></p>
+            <ul>
+                <li><strong>Họ Và Tên: </strong>.....</li>
+                <li><strong>Địa chỉ: </strong>.....</li>
+            </ul>
+        <!-- Thẻ <strong> là in đậm và thẻ <em> là thẻ in nghiêng -->
+    
+        <!-- Tạo bảng theo hàng th là in đậm còn td là thường -->
+            <h2 id="table">Bảng</h2>
+        <!-- border là viền cảu bảng -->
+            <table>
+                <tr>
+                    <th rowspan="2">Số thứ tự </th>
+                    <th rowspan="2">Trống</th>
+                    <th rowspan="2">Trống</th>
+                    <th colspan="2">Trống</th>
+                </tr>
+                <tr>
+                    <th>Trống</th>
+                    <th>Trống</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Trống</td>
+                    <td>Trống</td>
+                    <td>Trống</td>
+                    <td>Trống</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Trống</td>
+                    <td>Trống</td>
+                    <td>Trống</td>
+                    <td>Trống</td>
+                </tr>
+            </table>
+        </div>
+<!-- Bên Phải -->
+        <div id="right_side">
+            <h2 id="san_pham">Các Sản Phẩm</h2>
+            <div id="sp_container">
+                <div class="hang1">
+                    <img class="hang1_img" src="hinh/dienthoai.jpg" alt="Lỗi"/>
+                    <div class="hang1_title">Iphone 13 pro max</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+                <div class="hang1">
+                    <img class="hang1_img" src="hinh/samsung.jpg" alt="Lỗi"/>
+                    <div class="hang1_title">SamSung S22 Utra</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+                <div class="hang1">
+                    <img class="hang1_img" src="hinh/samsung2.jpg" alt="Lỗi"/>
+                    <div class="hang1_title">Samsung GalaxyA20</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+                <div class="hang1">
+                    <img class="hang1_img" src="hinh/vivo.jpg" alt="Lỗi"/>
+                    <div class="hang1_title">ViVo</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+                <div class="hang1">
+                    <img class="hang1_img" src="hinh/redmi.jpg" alt="Lỗi"/>
+                    <div class="hang1_title">Redmi</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+                <div class="hang1">
+                    <img class="hang1_img" src="hinh/oppo.jpg" alt="Lỗi"/>
+                    <div class="hang1_title">Oppo</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>                
+        </div>
+    </div>
+
+    <div id="background_laptop">
+        <h2 id="laptop">LAPTOP</h2>
+        <div id="laptop_container">
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/lapdellgamingG5.jpg" alt="Lỗi" width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP DELL Gaming G5</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/lapdellgaming_g7.jpg" alt="Lỗi" width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP DELL Gaming G7</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/lapdell_inspiron15.jpg" alt="Lỗi" width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP DELL INSPIRON 15</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop_dell-latitude.jpg" alt="Lỗi" width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP DELL LATITUDE</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop_hp_pavilion_gaming.jpg" alt="Lỗi" width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP HP GAMING PAVILION</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop-acer_nitro5-.jpg" alt="Lỗi"  width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP ACER NITRO 5</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop_acer_nitro_5.jpg" alt="Lỗi"  width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP ACER NITRO TIGER</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop_acer_aspire.jpg" alt="Lỗi"  width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP ACER ASPIRE</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop_macbook.jpg" alt="Lỗi"  width="100" height="200"/>
+                    <div class="hang2_title">MACBOOK</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hang2">
+                <div class="khung">
+                    <img class="hang2_img" src="hinh/laptop.jpg" alt="Lỗi" width="100" height="200"/>
+                    <div class="hang2_title">LAPTOP DELL</div>
+                    <form method="get" action="indexx.html">
+                        <button type="submit" class="botton hang1_buy_product">MUA NGAY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <h2 id="Contact_Info">Thông Tin Liên Hệ</h2>
+        <ul>
+            <li>Số điện Thoại: <a href="tell:0906.37.1250">0906371250</a></li>
+            <li>Zalo Dũng Hà: <a href="https://zalo.me/0906.37.1250">0906371250</a></li>
+            <li>Email: hadaidung159@gmail.com</li>
+            <li>Created by Dũng Hà - <a href="mailto:hadaidung159@gmail.com">Email me</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
