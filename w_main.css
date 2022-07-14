@@ -199,18 +199,18 @@ table th {
 }  */
 /* Phần bán lap top */
 
-#background_laptop {
+.background_laptop {
     background-color: #9ef9d8;
     color: black;
     border-radius: 40px;
 }
-#background_laptop h2 {
+.background_laptop h2 {
     text-align: center;
     padding: 20px;
     background-color: white;
 }
 
-#laptop_container {
+.laptop_container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -229,7 +229,7 @@ table th {
 .hang2_img {
     width: 96%;
 }
-#laptop_container .hang2 .hang2_title {
+.laptop_container .hang2 .hang2_title {
     color: red;
     padding: 10px;
 }
@@ -285,7 +285,7 @@ footer ul li a {
     .hang1 {
         flex: 50%;
     }
-    #laptop_container .hang2 {
+    .laptop_container .hang2 {
         flex: 50%;
     }
 }
