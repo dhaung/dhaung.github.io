@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bài 5</title>
+    <script src="javascripss.js"></script>
+</head>
+<body>
+    <h1>Khảo Sát Mua Hàng</h1>
+    <h2>Phiếu Điền Thông Tin</h2>
+    <form id="Dk" method="post" action="confirm.html">
+        <fieldset>
+            <legend>Thông Tin Cá Nhân</legend>
+            <p>
+                <label for="ten">Nhập Tên: </label>
+                <input type="text" id="ten">
+            </p>
+            <p>
+                <label for="Ho">Nhập Họ: </label>
+                <input type="text" id="Ho">
+            </p>
+            <p>
+                <label for="email">Nhập Email: </label>
+                <input type="text" id="email">
+            </p>
+            <p>
+                <label for="phone">Nhập Số Điện Thoại: </label>
+                <input type="text" id="phone">
+            </p>
+            <p>
+                <label  for="age">Nhập Tuổi: </label>
+                <input type="text" id="age">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Trình Độ Hiện Tại</legend>
+            <p>
+                <label for="trunghoc">Trung Học</label>
+                <input type="radio" name="TrinhDo" id="trunghoc" value="trunghoc">
+            </p>
+            <p>
+                <label for="DH">Đại Học</label>
+                <input type="radio" name="TrinhDo" id="DH" value="DaiHoc">
+            </p>
+            <p>
+                <label for="work">Đi Làm</label>
+                <input type="radio" name="TrinhDo" id="work" value="Work" >
+            </p>
+            <p>
+                <label for="khac">Khác</label>
+                <input type="radio" name="TrinhDo" id="khac"value="Khac">
+            </p>
+        </fieldset> 
+        <br>    
+        <fieldset>
+            <legend>Bạn thường mua các mặt hàng nào</legend>
+            <p>
+                <label for="dt">Điện Thoại</label>
+                <input type="checkbox" id="dt" name="Phone">
+            </p>
+            <p>
+                <label for="laptop">Laptop</label>
+                <input type="checkbox" id="laptop" name="Laptop">
+            </p>
+            <p>
+                <label for="banphim">Bàn Phím</label>
+                <input type="checkbox" id="banphim" name="BanPhim">
+            </p>
+            <p>
+                <label for="mouse">Chuột</label>
+                <input type="checkbox" id="mouse" name="mouse">
+            </p>
+        </fieldset>
+        <br>
+        <label>Bạn Thường Thanh Toán Bằng Cách Nào: </label>
+        <select>
+            <option>Chuyển Khoản</option>
+            <option>Tiền Mặt</option>
+            <option>Thẻ Tín Dụng</option>
+        </select>
+        <p>
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+</body>
+</html>
